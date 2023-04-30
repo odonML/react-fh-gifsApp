@@ -12,7 +12,7 @@ function List({categories}) {
       );
 }
 
-List.propType = {
+List.propTypoes = {
     categories: PropTypes.array.isRequired,
 }
 

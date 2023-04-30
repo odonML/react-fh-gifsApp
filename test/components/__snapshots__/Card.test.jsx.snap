@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`unit test of Card component should match snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="pitbulls baby"
+      src="http://www.ababa.com/"
+    />
+    <p>
+      pitbulls baby
+    </p>
+  </div>
+</div>
+`;

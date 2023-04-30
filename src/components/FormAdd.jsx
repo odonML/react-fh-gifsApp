@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { useState } from 'react';
 
 function FormAdd({onAddCategori}) {
@@ -13,10 +14,14 @@ function FormAdd({onAddCategori}) {
         setInpitValue("")
     }
 	return (
-		<form onSubmit={addCategori}>
+		<form onSubmit={addCategori} aria-label='form'>
 			<input type="text" placeholder="Buscar Gifs" value={inpitValue} onChange={ onInputChange}/>
 		</form>
 	);
+}
+
+FormAdd.propTypoes = {
+    onAddCategori: PropTypes.func.isRequired,
 }
 
 

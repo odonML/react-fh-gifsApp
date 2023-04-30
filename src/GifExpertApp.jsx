@@ -3,7 +3,7 @@ import {List, FormAdd} from "./components";
 
 
 function GifExpertApp() {
-	const [categories, setCategories] = useState(["one pounch", "dragon ball"]);
+	const [categories, setCategories] = useState(["hasbulla", "panda enojado"]);
 
 	const onAddCategori = (newCategori) => {
         if(categories.includes(newCategori)) return; 

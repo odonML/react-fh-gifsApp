@@ -1,5 +1,7 @@
 import { useFetchGifs } from "../hooks/useFetchGifs";
 import Card from "./Card";
+import PropTypes from 'prop-types'
+
 
 function CardGrid({ categori }) {
 	const {images, isLoading} = useFetchGifs(categori);	
@@ -12,11 +14,15 @@ function CardGrid({ categori }) {
 			}
 			<div className="card-grid">
 				{images.map((img) => (
-					<Card key={img.id} {...img} />
+					<Card key={img.id} {...img}></Card>
 				))}
 			</div>
 		</>
 	);
+}
+
+CardGrid.propTypes = {
+	categori: PropTypes.string.isRequired,
 }
 
 export default CardGrid;
